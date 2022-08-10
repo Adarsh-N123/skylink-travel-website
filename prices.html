@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="prices.css">
+    </head>
+    <body onload="show()" style="background-image: linear-gradient(to bottom right, rgb(6, 6, 6), rgb(243, 243, 233));background-repeat:no-repeat;background-attachment:fixed;background-position:center;">
+        <center><img id="logo" style="width: 300px;" src="logo1-01.png"></center>
+        <center><h1 style="font-family: cursive;"> Our Plans and Packages</h1></center>
+        <div class="parent">
+            <div id="leftarrow">
+                <button onclick="moveLeft();">&lt;</button>
+            </div>
+            <div class="child" id="c1">
+                <center>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/st-basils-cathedral-and-golden-first-rays-of-the-sun-picture-id1062947134?k=20&m=1062947134&s=612x612&w=0&h=ZudvT3JHLqBzavjNTM1n_8yDIIiQk8rBoWudEVuTm8A=" class="card-img-url">
+                        </div>
+                        <div class="card-text">
+                            <span class="date">5 days ago</span>
+                            <h2>Moscow</h2>
+                            <p>It's one of those places where you can't help but trip over history at every turn.</p>
+                        </div>
+                        <div class="card-stats">
+                            <h3>Rating:4.5/5</h3>
+                        </div>
+                    </div>
+                    </center>
+            </div>
+            <div class="child" id="c2">
+                <center>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://about.reachtheworld.org/wp-content/uploads/2020/09/Singapore.jpg" class="card-img-url">
+                        </div>
+                        <div class="card-text">
+                            <span class="date">5 days ago</span>
+                            <h2>Singapore</h2>
+                            <p>A bad day in Singapore is still better than a good day anywhere else.</p>
+                        </div>
+                        <div class="card-stats">
+                            <h3>Rating:4/5</h3>
+                        </div>
+                    </div>
+                    </center>
+            </div>
+            <div class="child" id="c3">
+                <center>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1200px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="card-img-url">
+                        </div>
+                        <div class="card-text">
+                            <span class="date">5 days ago</span>
+                            <h2>Paris</h2>
+                            <p>“Paris is not a city; it's a world.” “To know Paris is to know a great deal.”</p>
+                        </div>
+                        <div class="card-stats">
+                            <h3>Rating:4/5</h3>
+                        </div>
+                    </div>
+                    </center>
+            </div>
+            <div class="child" id="c4">
+                <center>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://www.planetware.com/wpimages/2020/02/italy-in-pictures-beautiful-places-to-photograph-amalfi-coast.jpg" class="card-img-url">
+                        </div>
+                        <div class="card-text">
+                            <span class="date">5 days ago</span>
+                            <h2>Italy</h2>
+                            <p>Italy is a dream that keeps returning for the rest of your life.</p>
+                        </div>
+                        <div class="card-stats">
+                            <h3>Rating:3.5/5</h3>
+                        </div>
+                    </div>
+                    </center>
+            </div>
+            <div class="child" id="c5">
+                <center>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/photos/cityscape-of-macau-city-at-twilight-night-picture-id1255907031?b=1&k=20&m=1255907031&s=170667a&w=0&h=Hagw9lTr7YkFZ6fHk55_pmsetpd3HzKSwKG61ya62mk=" class="card-img-url">
+                        </div>
+                        <div class="card-text">
+                            <span class="date">5 days ago</span>
+                            <h2>Macau</h2>
+                            <p>To awaken quite alone in a strange town is one of the pleasantest sensations in the world. You are surrounded by adventure.</p>
+                        </div>
+                        <div class="card-stats">
+                            <h3>Rating:4.5/5</h3>
+                        </div>
+                    </div>
+                    </center>
+            </div>
+            <div class="child" id="c6">
+                <center>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="card-img-url">
+                        </div>
+                        <div class="card-text">
+                            <span class="date">5 days ago</span>
+                            <h2>London</h2>
+                            <p>When a man is tired of London, he is tired of life; for there is in London all that life can afford</p>
+                        </div>
+                        <div class="card-stats">
+                            <h3>Rating:5/5</h3>
+                        </div>
+                    </div>
+                    </center>
+            </div>
+            <div id="rightarrow">
+                <button onclick="moveRight();">&gt;</button>
+            </div>
+        </div>
+        <script>
+            var left =1;
+            var right =3;
+            function show(){
+                for (i=left;i<=right;i++){
+                    document.getElementById('c'+i).style.display="inline-block";
+                }
+                
+            }
+            function moveLeft(){
+                if (left<=3 && right<=6){
+                    document.getElementById('c'+left).style.display="none";
+                    left+=1;
+                    right+=1;
+                    for (i=left;i<=right;i++){
+                        document.getElementById('c'+i).style.display="inline-block";
+                    }
+                }
+                
+                else{
+                    return;
+                }
+            }
+            function moveRight(){
+                if (left>=1 && right>=4){
+                    document.getElementById('c'+right).style.display="none";
+                    left-=1;
+                    right-=1;
+                    for (i=left;i<=right;i++){
+                        document.getElementById('c'+i).style.display="inline-block";
+                    }
+                }
+                else{
+                    return;
+                }
+            }
+            var direction = true;
+            setInterval(function(){
+                
+            if (right!=6 && left!=1){
+                if (direction==true){
+                    moveLeft();
+                }else if (direction==false){
+                    moveRight();
+                }
+                
+
+                
+            }else if(left==1){
+                direction = true;
+                moveLeft();
+            }else if(right==6){
+                direction = false;
+                moveRight();
+            }
+          }, 3000);
+        </script>
+    </body>
+</html>
