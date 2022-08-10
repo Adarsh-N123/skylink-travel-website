@@ -1,0 +1,90 @@
+
+.card{
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: black;
+    border-width: 3px;
+    display: grid;
+    grid-template-columns: 225px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    background-color: rgb(50, 49, 49);
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    font-family: roboto;
+}
+.card-image{
+    grid-area:image;
+    
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-color: crimson;
+    border-bottom-style: solid;
+    border-width: 4px;
+}
+.card-text{
+    grid-area:text;
+    margin: 25px;
+
+}
+.card-stats{
+    grid-area:stats;
+    background-color: crimson;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+.card-text .date{
+    color: rgb(255, 0, 102);
+    font-size: x-large;
+}
+.card-text h2{
+    color: rgb(176, 166, 153);
+    font-family: cursive;
+}
+.card-text p{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+}
+.card-stats h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-img-url{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 225px;
+    height:210px;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#main1{
+    display: none;
+}
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+
+}
+.card{
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+@media screen and (max-width:800px){
+    #main{
+        display:none;
+
+    }
+    #main1{
+        display: block;
+    }
+    
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mainpage.css">
+    </head>
+    <body style="background-image: linear-gradient(to bottom right, rgb(44, 43, 43), rgb(243, 243, 233));background-repeat:no-repeat;background-attachment:fixed;background-position:center;">
+        <div id="welcome">
+            <center ><div id="display1" style="margin-top: 15vh;" id="loader1"><center><h1><span style="color: rgb(15, 176, 230);">Welcome</span><span>&nbsp;Were Glad You're Here...</span></h1></center></div></center>
+            <center><img id="loader" src="hi.gif" style="margin-top: 20vh;width:10vw;"></center>
+        </div>
+        <div id="navone">
+            
+                <ul id="navbar">
+                    <li id="elem1"><img id="logo" src="logo1-01.png"></li>
+                    <li id="elem"><a href="places.html" style="text-decoration: none;color:black;">Places</a></li>
+                    <li id="elem"><a href="prices.html" style="text-decoration: none;color:black;">Pricing</a></li>
+                    <li id="elem"><a href="staff.html" style="text-decoration: none;color:black;">Staff</a></li>
+                    <li id="elem"><a href="#about" style="text-decoration: none;color:black;">About Us</a></li>
+                    <li id="elem"><a href="contact.html" style="text-decoration: none;color:black;">Contact Us</a></li>
+                </ul>
+        </div>
+
+        <div id="display" style="display: none;">
+            <center>
+            <div id="body">
+                <div class="slider">
+                    <div class="slides">
+                      
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      
+                      
+                      <div class="slide first">
+                        <img src="breathtaking-shot-colosseum-amphitheatre-located-rome-italy.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="happy-tourist-sightseeing-city-with-map.jpg" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="beautiful-water-villas-tropical-maldives-island-sunset-time.jpg" alt="">
+                      </div>
+                      
+                      
+                      <div class="navigation-auto" style="display: none;">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      
+                    </div>
+                    
+                  </div>
+                
+            </div>
+            </center>
+            <br>
+            <br>
+            <br>
+
+            <div id="about">
+                <center><h2>ABOUT US</h2></center>
+                <br>
+                <br>
+                <ul id="list2">
+                    <li id="abouttext"><p>&nbsp;&nbsp;&nbsp;We are a Team of people who like travelling a Lot.</p><p>So our mission is to provide hassle free travel to</p><p>People who like travel a Lot.</p><p>Travelling is a hobby to many.</p><p>If you are a Traveller enjoy our</p><p>Fantasic offers.</p></li>
+                    <li id="aboutimg"><img id="aboutimg2" src="about-01.png"></li>
+                </ul>
+                <center><iframe width="400px" height="250px" style="border-radius: 1rem;margin-top: -6vw;" src="https://www.youtube.com/embed/NUDBwBJeKvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                
+
+            </div>
+        </div>
+        
+          
+      
+          <script type="text/javascript">
+          var counter = 1;
+          setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 3){
+              counter = 1;
+            }
+          }, 5000);
+          </script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="places.css">
+    </head>
+    <body style="background-image: linear-gradient(to bottom right, rgb(6, 6, 6), rgb(243, 243, 233));background-repeat:no-repeat;background-attachment:fixed;background-position:center;">
+        <center><img id="logo" style="width: 400px;" src="logo1-01.png"></center>
+        <center><h1 style="font-size: xxx-Large;font-family:fantasy">Places</h1></center>
+        <div id="main">
+            <center>
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://i.natgeofe.com/k/95d61645-a0c7-470f-b198-74a399dd5dfb/singapore-city_square.jpg" class="card-img-url">
+                </div>
+                <div class="card-text">
+                    <span class="date">5 days ago</span>
+                    <h2>Singapore</h2>
+                    <p>A bad day in Singapore is still better than a good day anywhere else.</p>
+                </div>
+                <div class="card-stats">
+                    <h3>Rating:4/5</h3>
+                </div>
+            </div>
+            </center>
+        <div class="card" style="margin-left: 3vw;">
+            <div class="card-image">
+                <img src="https://www.travelandleisure.com/thmb/Olylzl0cReD6hco2rg3GT-oGy0o=/1000x1000/smart/filters:no_upscale()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg" class="card-img-url">
+            </div>
+            <div class="card-text">
+                <span class="date">6 days ago</span>
+                <h2>Paris</h2>
+                <p>“Paris is not a city; it's a world.” “To know Paris is to know a great deal.”</p>
+            </div>
+            <div class="card-stats">
+                <h3>Rating:5/5</h3>
+            </div>
+        </div>
+        <div class="card" style="margin-left: 3vw;">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1556629538-fc3eba61504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFjYXV8ZW58MHx8MHx8&w=1000&q=80" class="card-img-url">
+            </div>
+            <div class="card-text">
+                <span class="date">4 days ago</span>
+                <h2>Macau</h2>
+                <p>Be at the top of Macau Tower and hang in there for your life! ... The best thing to do in Macau is to climb the Macau Tower.</p>
+            </div>
+            <div class="card-stats">
+                <h3>Rating:4.5/5</h3>
+            </div>
+        </div>
+        </div>
+        <div id="main1">
+            <div>
+                <center>
+                <div class="card" style="width:225px">
+                    <div class="card-image">
+                        <img src="https://i.natgeofe.com/k/95d61645-a0c7-470f-b198-74a399dd5dfb/singapore-city_square.jpg" class="card-img-url">
+                    </div>
+                    <div class="card-text">
+                        <span class="date">5 days ago</span>
+                        <h2>Singapore</h2>
+                        <p>A bad day in Singapore is still better than a good day anywhere else.</p>
+                    </div>
+                    <div class="card-stats">
+                        <h3>Rating:4/5</h3>
+                    </div>
+                </div>
+                </center>
+
+            </div>
+            <br>
+            <div>
+                <center>
+                <div class="card" style="width:225px" >
+                    <div class="card-image">
+                        <img src="https://www.travelandleisure.com/thmb/Olylzl0cReD6hco2rg3GT-oGy0o=/1000x1000/smart/filters:no_upscale()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg" class="card-img-url">
+                    </div>
+                    <div class="card-text">
+                        <span class="date">6 days ago</span>
+                        <h2>Paris</h2>
+                        <p>“Paris is not a city; it's a world.” “To know Paris is to know a great deal.”</p>
+                    </div>
+                    <div class="card-stats">
+                        <h3>Rating:5/5</h3>
+                    </div>
+                </div>
+                </center>
+
+            </div>
+            <br>
+            <div>
+                <center>
+                <div class="card" style="width:225px" >
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1556629538-fc3eba61504e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFjYXV8ZW58MHx8MHx8&w=1000&q=80" class="card-img-url">
+                    </div>
+                    <div class="card-text">
+                        <span class="date">4 days ago</span>
+                        <h2>Macau</h2>
+                        <p>Be at the top of Macau Tower and hang in there for your life! ... The best thing to do in Macau is to climb the Macau Tower.</p>
+                    </div>
+                    <div class="card-stats">
+                        <h3>Rating:4.5/5</h3>
+                    </div>
+                </div>
+                </center>
+
+            </div>
+            
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if(counter > 3){
+                counter = 1;
+              }
+            }, 5000);
+            </script>
+        
+        
+    </body>
+</html>

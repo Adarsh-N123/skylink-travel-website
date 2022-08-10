@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="staff.css">
+    </head>
+    <body style="background-image: linear-gradient(to bottom right, rgb(6, 6, 6), rgb(243, 243, 233));background-repeat:no-repeat;background-attachment:fixed;background-position:center;">
+        <br>
+        <br>
+        <br>
+        <center><img id="logo" style="width: 300px;" src="logo1-01.png"></center>
+        <center><h1> Meet Our Staff</h1></center>
+        <center>
+            <div id="body">
+                <div class="slider">
+                    <div class="slides">
+                      
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      
+                      
+                      <div class="slide first">
+                        <center>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="manager-with-gadgets.jpg" class="card-img-url">
+                                </div>
+                                <div class="card-text">
+                                    
+                                    <h2>John Doe</h2>
+                                    <p style="color: black;">Meet John Doe our manager and a </p><p style="color: black;">very hard worker</p>
+                                </div>
+                                <div class="card-stats">
+                                    <h3>Rating:4/5</h3>
+                                </div>
+                            </div>
+                            </center>
+                      </div>
+                      <div class="slide">
+                        <center>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="businessman-black-suit-makes-thumbs-up.jpg" class="card-img-url">
+                                </div>
+                                <div class="card-text">
+                                    
+                                    <h2 style="color: white;">Alex</h2>
+                                    <p>Meet Alex our Marketing Manager.</p><p>Anyone comes after him in marketing.</p>
+                                </div>
+                                <div class="card-stats">
+                                    <h3>Rating:5/5</h3>
+                                </div>
+                            </div>
+                            </center>
+                      </div>
+                      <div class="slide">
+                        <center>
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="lifestyle-beautiful-asian-business-young-woman-using-laptop-computer-smart-phone-office-desk.jpg" class="card-img-url">
+                                </div>
+                                <div class="card-text">
+                                    
+                                    <h2>Olivia</h2>
+                                    <p style="color: black;">Meet Olivia our Trips Manager.</p><p style="color: black;">A travel enthusiast, best in designing Trips.</p>
+                                </div>
+                                <div class="card-stats">
+                                    <h3>Rating:4.5/5</h3>
+                                </div>
+                            </div>
+                            </center>
+                      </div>
+                      
+                      
+                      <div class="navigation-auto" style="display: none;">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      
+                    </div>
+                    
+                  </div>
+                
+            </div>
+            </center>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                  document.getElementById('radio' + counter).checked = true;
+                  counter++;
+                  if(counter > 3){
+                    counter = 1;
+                  }
+                }, 5000);
+                </script>
+    </body>
+</html>
