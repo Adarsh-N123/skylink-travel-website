@@ -167,6 +167,13 @@ html{
   #radio3:checked ~ .navigation-auto .auto-btn3{
     background: #40D3DC;
   }
+
+
+@media screen and (max-width:500px){
+      #navone{
+        margin-left: -10vw;
+      }
+  }
   
  
         
