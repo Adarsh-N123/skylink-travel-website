@@ -25,3 +25,4 @@
   In the contact us page you can get the contact details of the website and a section for the contact using mail is done by a HTML form 
   and the access to google and social media links is present in the contact us section.
   There is a welcome page animation(preloader) to the main page.
+  This website is fully Responsive.
