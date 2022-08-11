@@ -9,9 +9,9 @@
   
 ## Languages Used:
 
-  *HTML
-  *CSS
-  *JAVASCRIPT
+  * HTML
+  * CSS
+  * JAVASCRIPT
 ## Description
 
   This project consists of a Home page which has a responsive Navigation Bar and the contents of the home page are 
